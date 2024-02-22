@@ -1,0 +1,13 @@
+SQL injection - Product category filter
+
+End goal: determine the number of columns returned by the query
+
+Background (Union):
+
+table1     table2
+a | b      c | d
+.....      .....
+1 , 2      2 , 3
+3 , 4      4 , 5
+
+Query #1: Select a, b from table1

