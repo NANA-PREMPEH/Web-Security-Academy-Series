@@ -1,0 +1,6 @@
+Lab #4 - Username enumeration via subtly different responses
+
+Target Goal - Exploit password reset functionality to reset Carlos's password and access his account.
+
+username=ec2-user
+password=austin
