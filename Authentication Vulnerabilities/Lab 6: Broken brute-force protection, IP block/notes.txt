@@ -1,2 +1,5 @@
- Your credentials: wiener:peter
+Lab 6: Broken brute-force protection, IP block
+target Goal: - Brute force the Victim's password
+
+Your credentials: wiener:peter
 Victim's username: carlos 
