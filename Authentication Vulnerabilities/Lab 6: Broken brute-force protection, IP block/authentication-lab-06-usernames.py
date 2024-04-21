@@ -16,6 +16,6 @@ for pwd in lines:
         print(pwd.strip('\n'))
     else:
         print("peter")
-        print(pwd.string('\n'))
+        print(pwd.strip('\n'))
         i = i + 1
     i = i + 1
